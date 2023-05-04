@@ -1,0 +1,119 @@
+{
+    "nodes": [
+      {
+        "name": "v1",
+        "type": "QuantumRouter",
+        "seed": 0,
+        "memo_size": 50
+      },
+      {
+        "name": "v2",
+        "type": "QuantumRouter",
+        "seed": 1,
+        "memo_size": 50
+      },
+      {
+        "name": "v3",
+        "type": "QuantumRouter",
+        "seed": 2,
+        "memo_size": 50
+      },
+      {
+        "name": "v4",
+        "type": "QuantumRouter",
+        "seed": 3,
+        "memo_size": 50
+      },
+      {
+        "name": "v5",
+        "type": "QuantumRouter",
+        "seed": 4,
+        "memo_size": 50
+      }
+    ],
+    "qconnections": [
+      {
+        "node1": "v1",
+        "node2": "v2",
+        "attenuation": 0.0002,
+        "distance": 500,
+        "type": "meet_in_the_middle"
+      },
+      {
+        "node1": "v2",
+        "node2": "v3",
+        "attenuation": 0.0002,
+        "distance": 500,
+        "type": "meet_in_the_middle"
+      },
+      {
+        "node1": "v3",
+        "node2": "v4",
+        "attenuation": 0.0002,
+        "distance": 500,
+        "type": "meet_in_the_middle"
+      },
+      {
+        "node1": "v4",
+        "node2": "v5",
+        "attenuation": 0.0002,
+        "distance": 500,
+        "type": "meet_in_the_middle"
+      }
+    ],
+    "is_parallel": false,
+    "stop_time": 2000000000000,
+    "cconnections": [
+      {
+        "node1": "v1",
+        "node2": "v2",
+        "delay": 500000000
+      },
+      {
+        "node1": "v1",
+        "node2": "v3",
+        "delay": 1000000000
+      },
+      {
+        "node1": "v1",
+        "node2": "v4",
+        "delay": 1500000000
+      },
+      {
+        "node1": "v1",
+        "node2": "v5",
+        "delay": 2000000000
+      },
+      {
+        "node1": "v2",
+        "node2": "v3",
+        "delay": 500000000
+      },
+      {
+        "node1": "v2",
+        "node2": "v4",
+        "delay": 1000000000
+      },
+      {
+        "node1": "v2",
+        "node2": "v5",
+        "delay": 1500000000
+      },
+      {
+        "node1": "v3",
+        "node2": "v4",
+        "delay": 500000000
+      },
+      {
+        "node1": "v3",
+        "node2": "v5",
+        "delay": 1000000000
+      },
+      {
+        "node1": "v4",
+        "node2": "v5",
+        "delay": 500000000
+      }
+  ]
+  }
+  
